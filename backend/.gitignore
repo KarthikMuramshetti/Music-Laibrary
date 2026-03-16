@@ -4,8 +4,19 @@ node_modules/
 # Environment variables — NEVER push this
 .env
 
-# User uploaded files — too large, regenerated on server start
-uploads/
+# User uploaded files — ignore the FILES but keep the folders
+uploads/songs/*
+uploads/artists/*
+uploads/directors/*
+uploads/profiles/*
+uploads/albums/*
+
+# But always keep the .gitkeep placeholder files
+!uploads/songs/.gitkeep
+!uploads/artists/.gitkeep
+!uploads/directors/.gitkeep
+!uploads/profiles/.gitkeep
+!uploads/albums/.gitkeep
 
 # Logs
 npm-debug.log*
