@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Environment variables — NEVER push this
+.env
+
+# User uploaded files — too large, regenerated on server start
+uploads/
+
+# Logs
+npm-debug.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
